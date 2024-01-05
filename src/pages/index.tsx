@@ -231,7 +231,7 @@ export default function Page() {
         <CardMedia
         key={i}
           component="img"
-          height="345px"
+          height="350px"
           image={e.img}
           alt="Paella dish"
         />
