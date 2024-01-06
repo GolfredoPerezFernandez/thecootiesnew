@@ -25,8 +25,9 @@ import { IconButtonProps } from '@mui/material/IconButton';
 import 'react-multi-carousel/lib/styles.css';
 import ReactPlayer from 'react-player';
 import { makeStyles } from '@material-ui/core/styles';
-import {  Grid, Link} from "@mui/material";
+import {  Grid, Link, TextField} from "@mui/material";
 import { TypeAnimation } from 'react-type-animation';
+import TokenSale from './tokenSale';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -117,6 +118,7 @@ interface ExpandMoreProps extends IconButtonProps {
 
 export default function Page() { 
    const classes = useStyles();
+   const [amount,setAmount]=React.useState(0)
 
   const responsive = {
     superLargeDesktop: {
@@ -247,36 +249,7 @@ export default function Page() {
 </Carousel>
 
 
-<div className="bg-black-50 font-sans">
-<div className="min-h-[400px] flex items-center justify-center">
-  <div className="bg-black shadow-lg rounded-lg p-8">
-    <div className="text-center mb-6">
-      <h1 className="text-2xl font-semibold">Presale title</h1>
-    </div>
-    <div className="mb-4">
-      <label id="amount" className="block text-sm font-medium text-gray-700">Amount to Buy</label>
-      <div className="mt-1 relative rounded-md shadow-sm">
-        <input type="number" name="amount" id="amount" className="focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-7 pr-12 sm:text-sm border-gray-300 rounded-md" placeholder="0.00"/>
-        <div className="absolute inset-y-0 right-0 flex items-center">
-          <label id="currency" className="sr-only">Currency</label>
-          <select id="currency" name="currency" className="focus:ring-indigo-500 focus:border-indigo-500 h-full py-0 pl-2 pr-7 border-transparent bg-transparent text-gray-500 sm:text-sm rounded-md">
-            <option>ETH</option>
-          </select>
-        </div>
-      </div>
-    </div>
-    <div className="mb-4">
-      <button className="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50">
-        BUY
-      </button>
-    </div>
-    <div className="text-center">
-      <span className="text-sm text-gray-600">YOU WILL GET</span>
-      <span className="text-lg font-medium text-gray-900">0.005</span>
-    </div>
-  </div>
-</div>
-</div>
+<TokenSale/>
 <Typography color="white" fontFamily={"Orbitron"}   variant="h2" component="h2" textAlign={"center"} justifyContent={"center"} className={classes.title}>
           Roadmap
           </Typography>
