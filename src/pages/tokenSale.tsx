@@ -63,7 +63,7 @@ if(amount>0){
   <div className="min-h-[400px] flex items-center justify-center">
     <div className="bg-black shadow-lg rounded-lg p-8">
       <div className="text-center mb-6">
-        <h1 className="text-2xl font-semibold">Token Sale</h1>
+        <h1 className="text-2xl font-semibold">COOTCASH Swap</h1>
       </div>
       <div className="mb-4">
         <label id="amount" className="block text-sm font-medium text-gray-700">Amount to Buy</label>
