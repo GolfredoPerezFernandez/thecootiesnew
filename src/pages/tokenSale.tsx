@@ -35,7 +35,7 @@ export default function TokenSale() {
 
     useEffect(()=>{
 if(amount>0){
-  setIntercambio(amount/25)
+  setIntercambio(amount*25)
 }
     },[amount])
 
