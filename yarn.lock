@@ -16539,7 +16539,7 @@ w3c-hr-time@^1.0.1:
   dependencies:
     browser-process-hrtime "^1.0.0"
 
-wagmi@^1.3.9:
+wagmi@latest:
   version "1.3.9"
   resolved "https://registry.npmjs.org/wagmi/-/wagmi-1.3.9.tgz"
   integrity sha512-BQbl+vWLNpLraXd/MWsl1P3I41l7DHrujx6qshIa1HDV7Mdh0GNrDuluRYBtuK2bBx9WM/Fjw45Ef2aKADan9A==
