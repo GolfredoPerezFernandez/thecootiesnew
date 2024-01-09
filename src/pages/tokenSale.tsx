@@ -41,7 +41,7 @@ if(amount>0){
 
     
   const { write:buyCootFlare} = useContractWrite({
-    address: '0xC49fBd0F07B3312Ce1B9e613b044185F061dFACd',
+    address: '0x1D90a59C8fa0040E7d57482475bD3aeBE64d8750',
     abi: SALEABI,
 	
 	chainId:14,
