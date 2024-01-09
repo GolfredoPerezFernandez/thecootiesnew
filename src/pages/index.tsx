@@ -1,5 +1,5 @@
 import { ConnectButton } from '@rainbow-me/rainbowkit'
-import { useAccount } from 'wagmi'
+import { useAccount, useNetwork } from 'wagmi'
 import * as React from 'react'
 import FaceIcon from '@mui/icons-material/Face';
 import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
@@ -119,6 +119,7 @@ interface ExpandMoreProps extends IconButtonProps {
 export default function Page() { 
    const classes = useStyles();
    const [amount,setAmount]=React.useState(0)
+   const { chain,chains } = useNetwork()
 
   const responsive = {
     superLargeDesktop: {
@@ -248,8 +249,7 @@ export default function Page() {
     
 </Carousel>
 
-
-<TokenSale/>
+{chain?.id.toString()==="14"?<TokenSale/>:null}
 <Typography color="white" fontFamily={"Orbitron"}   variant="h2" component="h2" textAlign={"center"} justifyContent={"center"} className={classes.title}>
           Roadmap
           </Typography>
