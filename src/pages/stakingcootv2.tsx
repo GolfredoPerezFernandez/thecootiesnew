@@ -500,7 +500,7 @@ setValues({ ...values, [prop]:event.target.value });
   return ( <div
     key={'112'}
         style={{
-          backgroundImage: `url(${"https://bafybeierqik32tmxcn4l2i3xjauvtivhcbe32sbbddsfd2xf6mvomp2nty.ipfs.nftstorage.link/cootbrewBG.png"})`,
+          backgroundImage: `url(${"https://bafybeifpfxdzsfvhoxif4sqnrthwi3r66nmsddemeijxzjtqallf7q6t44.ipfs.nftstorage.link/bg1.png"})`,
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
           backgroundColor:"#0E0C1D",

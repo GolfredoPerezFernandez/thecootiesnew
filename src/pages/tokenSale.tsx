@@ -103,8 +103,8 @@ if(amount>0){
         </button>
       </div>
       <div className="text-center">
-        <span className="text-sm text-gray-600">YOU WILL GET</span>
-        <span className="text-lg font-medium text-gray-900 ml-2">{intercambio}</span>
+        <span className="text-sm text-red-600">YOU WILL GET</span>
+        <span className="text-lg font-medium text-red-900 ml-2">{intercambio}</span>
       </div>
     </div>
   </div>

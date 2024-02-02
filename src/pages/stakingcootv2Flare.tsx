@@ -335,7 +335,7 @@ const { data :dataBalance,  }:{data:any} = useContractRead({
     args:[[values.amountStake]],
     onSuccess:()=>{
       setLoading(false)
-      setConfirmationMessage('Enjoy the 2% Bonus!');
+      setConfirmationMessage('Enjoy the 1% Bonus!');
       setConfirmationOpen(true);
     },
     onError:()=>{
@@ -512,7 +512,7 @@ setValues({ ...values, [prop]:event.target.value });
   return ( <div
     key={'112'}
         style={{
-          backgroundImage: `url(${"https://bafybeig3mmihtdib3m5afudkekczf7qdepvl7hdja3pexparbg6qwuzrdi.ipfs.nftstorage.link/cootbreflareBG.png"})`,
+          backgroundImage: `url(${"https://bafybeid7uqbmyrwbaqvr7nyotbk54haukx6w6z76nkd7lf4k73hlzrehnu.ipfs.nftstorage.link/mountains.png"})`,
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
           backgroundColor:"#0E0C1D",
@@ -533,7 +533,7 @@ setValues({ ...values, [prop]:event.target.value });
       
 
     <TypeAnimation
-							 sequence={[ 'Magical COOT BREW ', 
+							 sequence={[ 'Magical CASH BREW ', 
 							 ]}
 							 wrapper="div"
 							 cursor={false}
@@ -627,7 +627,7 @@ setValues({ ...values, [prop]:event.target.value });
       style={{ fontWeight: 'bold', marginBottom: '2rem' }}
       paragraph
     >
-      🚀 COOT BREW: Where DeFi Staking Gets a Magical Boost! 🚀
+      🚀 CASH BREW: Where DeFi Staking Gets a Magical Boost! 🚀
     </Typography>
 
     {/* Paragraph 1 */}
@@ -646,7 +646,7 @@ setValues({ ...values, [prop]:event.target.value });
       maxHeight: 'calc(100vh - 200px)', // Adjust the max height as needed
     }}
   >
-      Welcome to COOT BREW, a one-of-a-kind platform that combines traditional DeFi staking with an innovative tier-based reward system and exclusive NFT drops known as "COOT BREW." With smart contract features that are engineered to optimize both engagement and profitability, we're setting a new standard in the staking arena.
+      Welcome to CASH BREW, a one-of-a-kind platform that combines traditional DeFi staking with an innovative tier-based reward system and exclusive NFT drops known as "CASH BREW." With smart contract features that are engineered to optimize both engagement and profitability, we're setting a new standard in the staking arena.
     </Typography>
 
     {/* Paragraph 2 */}
@@ -706,7 +706,7 @@ setValues({ ...values, [prop]:event.target.value });
     }}
   >
       🎨 COOT BREW NFTs: Potions for Higher Rewards
-      Every 14 days, grab a COOT BREW NFT. Keep these stunning potions for trading or burn them for an instant 1% reward boost. It's digital alchemy at its finest!
+      Every 14 days, grab a CASH BREW NFT. Keep these stunning potions for trading or burn them for an instant 1% reward boost. It's digital alchemy at its finest!
     </Typography>
 
     {/* Paragraph 5 */}
@@ -785,7 +785,7 @@ setValues({ ...values, [prop]:event.target.value });
       maxHeight: 'calc(100vh - 200px)', // Adjust the max height as needed
     }}
   >
-      COOT BREW isn't just a platform; it's an ecosystem where DeFi, gamified rewards, and NFT enchantment converge. Ready to stake? Join COOT BREW and let the magic unfold! 🌌
+      CASH BREW isn't just a platform; it's an ecosystem where DeFi, gamified rewards, and NFT enchantment converge. Ready to stake? Join CASH BREW and let the magic unfold! 🌌
     </Typography>
   </Box>
 </Modal>
@@ -819,18 +819,18 @@ setValues({ ...values, [prop]:event.target.value });
     </Stack>
     
     {dataStakingBalance?<TypeAnimation
-      sequence={["Deposited "+Math.round(parseFloat(ethers.formatEther(dataStakingBalance.toString()))).toString()+` $COOT`,]}
+      sequence={["Deposited "+Math.round(parseFloat(ethers.formatEther(dataStakingBalance.toString()))).toString()+` $CASH`,]}
       wrapper="div"
       cursor={false}
       style={{marginTop:10,textShadow: "0px  0px  7px  #FFFFFF",fontSize:isTabletOrMobile2?18:20 ,width:"100%",color:"yellow",fontFamily:"orbitron",textAlign:'center'}}
     />:<TypeAnimation
-    sequence={["Deposited "+Math.round(parseFloat(ethers.formatEther("0"))).toString()+` $COOT`,]}
+    sequence={["Deposited "+Math.round(parseFloat(ethers.formatEther("0"))).toString()+` $CASH`,]}
     wrapper="div"
     cursor={false}
     style={{marginTop:10,textShadow: "0px  0px  7px  #FFFFFF",fontSize:isTabletOrMobile2?18:20 ,width:"100%",color:"yellow",fontFamily:"orbitron",textAlign:'center'}}
   />}
     {dataStakingEarned?<TypeAnimation
-      sequence={["Earned "+parseFloat(ethers.formatEther(dataStakingEarned).substring(0,6).toString())+` $COOT`,
+      sequence={["Earned "+parseFloat(ethers.formatEther(dataStakingEarned).substring(0,6).toString())+` $CASH`,
    ]}
       wrapper="div"
       cursor={false}
@@ -838,7 +838,7 @@ setValues({ ...values, [prop]:event.target.value });
       style={{marginTop:10,textShadow: "0px  0px  7px  #FFFFFF",fontSize:isTabletOrMobile2?18:20 ,width:"100%",color:"yellow",fontFamily:"orbitron",textAlign:'center'}}
     />:
 <TypeAnimation
-      sequence={["Earned "+Math.round(parseFloat(ethers.formatEther("0").substring(0,6).toString()))+` $COOT`,
+      sequence={["Earned "+Math.round(parseFloat(ethers.formatEther("0").substring(0,6).toString()))+` $CASH`,
    ]}
       wrapper="div"
       cursor={false}
@@ -927,14 +927,14 @@ setValues({ ...values, [prop]:event.target.value });
 
       
     
- <Typography style={{ marginTop:20,textShadow: "0px  0px  7px  #FFD700",fontSize:isTabletOrMobile2?18:20 ,width:"100%",color:"white",fontFamily:"orbitron",textAlign:'center'}} key={"33321"} color="#041836" variant="h1" weight="700">{Math.round(stakeAmount)+` $COOT`}</Typography>
+ <Typography style={{ marginTop:20,textShadow: "0px  0px  7px  #FFD700",fontSize:isTabletOrMobile2?18:20 ,width:"100%",color:"white",fontFamily:"orbitron",textAlign:'center'}} key={"33321"} color="#041836" variant="h1" weight="700">{Math.round(stakeAmount)+` $CASH`}</Typography>
  
         {loading?<CircularProgress color="secondary" />
 :<Box style={{width:"100%",marginTop:30,flexDirection:"row"}}> 
 {parseFloat(ethers.formatEther(dataAllowance??"0".toString()))>=parseFloat(stakeAmount.toString())? <button  onClick={handleStake} style={{marginBottom:"5px",marginTop:"5px",textShadow: "0px  0px  7px  #FFFFFF",marginRight:15, width:200,marginLeft:15}}  className="button-855" role="button">
-        STAKE COOT
+        STAKE CASH
         </button>: <button  onClick={handleStake} style={{marginBottom:"5px",marginTop:"5px",textShadow: "0px  0px  7px  #FFD700",marginRight:15,width:200,marginLeft:15}}  className="button-855" role="button">
-        APPROVE COOT
+        APPROVE CASH
         </button>}
     {     
  <button  onClick={handleClaim} style={{marginBottom:"0px",marginTop:"20px",textShadow: "0px  0px  7px  #FFD700",marginRight:15,width:200,marginLeft:15}}  className="button-855" role="button">
@@ -965,18 +965,18 @@ setValues({ ...values, [prop]:event.target.value });
            </Stack>
            
            {dataStakingBalance?<TypeAnimation
-      sequence={["Deposited "+Math.round(parseFloat(ethers.formatEther(dataStakingBalance.toString()))).toString()+` $COOT`,]}
+      sequence={["Deposited "+Math.round(parseFloat(ethers.formatEther(dataStakingBalance.toString()))).toString()+` $CASH`,]}
       wrapper="div"
       cursor={false}
       style={{marginTop:10,textShadow: "0px  0px  7px  #FFFFFF",fontSize:isTabletOrMobile2?14:20 ,width:"100%",color:"yellow",fontFamily:"orbitron",textAlign:'center'}}
     />:<TypeAnimation
-    sequence={["Deposited "+Math.round(parseFloat(ethers.formatEther("0"))).toString()+` $COOT`,]}
+    sequence={["Deposited "+Math.round(parseFloat(ethers.formatEther("0"))).toString()+` $CASH`,]}
     wrapper="div"
     cursor={false}
     style={{marginTop:10,textShadow: "0px  0px  7px  #FFFFFF",fontSize:isTabletOrMobile2?18:20 ,width:"100%",color:"yellow",fontFamily:"orbitron",textAlign:'center'}}
   />}
     {dataStakingEarned?<TypeAnimation
-      sequence={["Earned "+Math.round(parseFloat(ethers.formatEther(dataStakingEarned.toString()).substring(0,6).toString()))+` $COOT`,
+      sequence={["Earned "+Math.round(parseFloat(ethers.formatEther(dataStakingEarned.toString()).substring(0,6).toString()))+` $CASH`,
    ]}
       wrapper="div"
       cursor={false}
@@ -984,7 +984,7 @@ setValues({ ...values, [prop]:event.target.value });
       style={{marginTop:10,textShadow: "0px  0px  7px  #FFFFFF",fontSize:isTabletOrMobile2?18:20 ,width:"100%",color:"yellow",fontFamily:"orbitron",textAlign:'center'}}
     />:
 <TypeAnimation
-      sequence={["Earned "+Math.round(parseFloat(ethers.formatEther("0").substring(0,6).toString()))+` $COOT`,
+      sequence={["Earned "+Math.round(parseFloat(ethers.formatEther("0").substring(0,6).toString()))+` $CASH`,
    ]}
       wrapper="div"
       cursor={false}
@@ -1052,7 +1052,7 @@ setValues({ ...values, [prop]:event.target.value });
        
                <Box style={{marginTop:10,flexDirection:"row",justifyContent:"center",alignItems:"center"}}>
                <Stack direction="row" spacing={2} justifyContent="center" alignItems="center" style={{ margin: '0 auto',width:"60%"}}><TypeAnimation
-                 sequence={[`0 COOT`,
+                 sequence={[`0 CASH`,
               ]}
                  wrapper="div"
                  cursor={false}
@@ -1104,18 +1104,18 @@ setValues({ ...values, [prop]:event.target.value });
 />
 
 
-               <Typography style={{ textShadow: "0px  0px  7px  #FFD700",fontSize:isTabletOrMobile2?14:20 ,width:200,color:"white",fontFamily:"orbitron",textAlign:'center'}} key={"33321"} color="#041836" variant="h1" weight="700">{Math.round(parseFloat(ethers.formatEther(dataStakingBalance)))+` COOT`}</Typography>
+               <Typography style={{ textShadow: "0px  0px  7px  #FFD700",fontSize:isTabletOrMobile2?14:20 ,width:200,color:"white",fontFamily:"orbitron",textAlign:'center'}} key={"33321"} color="#041836" variant="h1" weight="700">{Math.round(parseFloat(ethers.formatEther(dataStakingBalance)))+`COOTCASH`}</Typography>
 
              </Stack>
            
-        <Typography style={{ marginTop:20,textShadow: "0px  0px  7px  #FFD700",fontSize:isTabletOrMobile2?14:20 ,width:"100%",color:"white",fontFamily:"orbitron",textAlign:'center'}} key={"33321"} color="#041836" variant="h1" weight="700">{Math.round(stakeAmount)+` $COOT`}</Typography>
+        <Typography style={{ marginTop:20,textShadow: "0px  0px  7px  #FFD700",fontSize:isTabletOrMobile2?14:20 ,width:"100%",color:"white",fontFamily:"orbitron",textAlign:'center'}} key={"33321"} color="#041836" variant="h1" weight="700">{Math.round(stakeAmount)+` $CASH`}</Typography>
              
        <Box style={{width:"100%",marginTop:30,flexDirection:"row"}}> 
        {loading?       <CircularProgress color="secondary" />
 :
 
 <button  onClick={handleWithdraw} style={{marginBottom:"10px",marginTop:"20px",textShadow: "0px  0px  7px  #FFD700",marginRight:15,width:200,marginLeft:15}}  className="button-855" role="button">
-        WITHDRAW COOT
+        WITHDRAW CASH
         </button>}
 
                   
@@ -1143,7 +1143,7 @@ setValues({ ...values, [prop]:event.target.value });
   />
   <div style={{height:600,marginTop:30,marginBottom:50,width:"100%",alignSelf:"center", justifyContent:"center",alignItems:"center"}}>
   <TypeAnimation
-      sequence={[`COOT BREWS`
+      sequence={[`CASH BREWS`
    ]}
       wrapper="div"
       cursor={false}
